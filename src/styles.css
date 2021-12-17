@@ -1,4 +1,45 @@
+* {
+  --theme-background: linear-gradient(0deg, rgb(37, 34, 34), #000);
+  --theme-color: rgb(210, 224, 12);
+  --padding-input: 10px;
+  --margin-input: 10px;
+  --grey-darker: rgb(48, 46, 46);
+  --grey-lighter: rgb(128, 123, 123);
+  --white: white;
+  --shadow: rgb(229, 240, 171);
+  --max-height: 1000px;
+  --min-width: 600px;
+  --max-width: 1000px;
+  --min-height: 600px;
+  --width: 90%;
+  --height: 100%;
+  --btnColor: #bbee79;
+}
+
+:root {
+  width: var(--width);
+  height: var(--height);
+  color: var(--theme-color);
+  background: var(--theme-background);
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  max-width: var(--max-width);
+}
+input {
+  padding-right: var(--padding-input);
+  margin: var(--margin-input);
+  background-color: var(--grey-darker);
+}
+input:hover,
+:focus {
+  cursor: pointer;
+  box-shadow: 0px 5px 5px var(--shadow);
+  background-color: var(--grey-lighter);
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px var(--btnColor);
 }
